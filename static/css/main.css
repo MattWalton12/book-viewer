@@ -1,0 +1,96 @@
+/* line 1, ../../sass/main.scss */
+body {
+  background-color: #222;
+  background-image: url("../img/background.png");
+  background-repeat: repeat;
+}
+
+/* line 7, ../../sass/main.scss */
+.book {
+  height: 100%;
+  overflow: auto;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, ../../sass/main.scss */
+.book .page {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* line 20, ../../sass/main.scss */
+.book .page .loading {
+  background-color: rgba(20, 20, 20, 0.8);
+  background-image: url("../img/loading.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 32, ../../sass/main.scss */
+.scroll {
+  width: 48px;
+  height: 48px;
+  background-color: #141414;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+  position: absolute;
+  top: 50%;
+  margin-top: -24px;
+  cursor: pointer;
+  cursor: hand;
+}
+/* line 47, ../../sass/main.scss */
+.scroll:hover {
+  opacity: 0.7;
+}
+/* line 51, ../../sass/main.scss */
+.scroll.left {
+  left: 2%;
+  background-image: url("../img/arrow-left.png");
+}
+/* line 56, ../../sass/main.scss */
+.scroll.right {
+  right: 2%;
+  background-image: url("../img/arrow-right.png");
+}
+@media screen and (max-width: 500px) {
+  /* line 32, ../../sass/main.scss */
+  .scroll {
+    display: hidden;
+    display: none;
+  }
+}
+
+/* line 67, ../../sass/main.scss */
+.navigator {
+  position: absolute;
+  background-color: #141414;
+  opacity: 0.4;
+  height: 30px;
+  bottom: 10px;
+  left: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #f6f6f6;
+}
+/* line 82, ../../sass/main.scss */
+.navigator input {
+  width: auto;
+  text-align: right;
+  background: transparent;
+  border: 0;
+  color: #f6f6f6;
+}
+/* line 91, ../../sass/main.scss */
+.navigator span {
+  color: #f6f6f6;
+  line-height: 30px;
+}
+/* line 96, ../../sass/main.scss */
+.navigator:hover {
+  opacity: 0.7;
+}
