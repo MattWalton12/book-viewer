@@ -153,4 +153,12 @@ $(document).ready(function() {
         }
 
     });
+
+    $(document).keydown(function(e) {
+        if (e.keyCode == 37)
+            prevPage();
+
+        if (e.keyCode == 39)
+            nextPage();
+    });
 });
