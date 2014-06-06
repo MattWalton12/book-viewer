@@ -64,14 +64,14 @@ function updatePages() {
     $(".page .loading").fadeIn("fast");
 
 
-    firstImage.src = "https://matt-walton.net/geog/pages/" + page + "v.png";
+    firstImage.src = "pages/" + page + "v.png";
 
     firstImage.onload = function() {
         $("#page-1 .loading").fadeOut("fast");
         $("#page-1").css("background-image", "url(" + firstImage.src + ")");
     }
 
-    secondImage.src = "https://matt-walton.net/geog/pages/" + (page+1) + "v.png";
+    secondImage.src = "pages/" + (page+1) + "v.png";
 
     secondImage.onload = function() {
         $("#page-2 .loading").fadeOut("fast");
